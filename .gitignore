@@ -134,7 +134,7 @@ yarn-error.log
 
 # Mono auto generated files
 mono_crash.*
-
+.vscode
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
