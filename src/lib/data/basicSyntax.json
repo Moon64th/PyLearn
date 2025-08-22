@@ -1,0 +1,136 @@
+{
+  "python_syntax_basics": {
+    "introduction": {
+      "description": "Python is a high-level, interpreted programming language known for its readability and simplicity. It uses indentation to define code blocks instead of braces or keywords.",
+      "example": "print('Hello, World!')"
+    },
+    "variables": {
+      "description": "Variables are used to store data values. Python uses dynamic typing, meaning you don't need to declare a variable type before assigning a value.",
+      "notes": [
+        "Variable names must start with a letter or underscore.",
+        "They can contain letters, numbers, and underscores.",
+        "They are case-sensitive."
+      ],
+      "examples": [
+        "x = 5  # integer",
+        "name = 'Alice'  # string",
+        "pi = 3.14159  # float",
+        "is_active = True  # boolean"
+      ]
+    },
+    "data_types": {
+      "description": "Python has built-in data types grouped into categories.",
+      "categories": {
+        "numeric": {
+          "types": ["int", "float", "complex"],
+          "example": "a = 10  # int\nb = 3.14  # float\nc = 2 + 3j  # complex"
+        },
+        "sequence": {
+          "types": ["list", "tuple", "range"],
+          "example": "my_list = [1, 2, 3]\nmy_tuple = (4, 5, 6)\nmy_range = range(5)"
+        },
+        "text": {
+          "types": ["str"],
+          "example": "greeting = 'Hello, Python!'"
+        },
+        "mapping": {
+          "types": ["dict"],
+          "example": "person = {'name': 'Bob', 'age': 30}"
+        },
+        "set_types": {
+          "types": ["set", "frozenset"],
+          "example": "numbers = {1, 2, 3}\nfrozen_numbers = frozenset([4, 5, 6])"
+        },
+        "boolean": {
+          "types": ["bool"],
+          "example": "is_open = True"
+        },
+        "binary": {
+          "types": ["bytes", "bytearray", "memoryview"],
+          "example": "b = b'hello'\nba = bytearray(5)\nmv = memoryview(bytes(5))"
+        },
+        "none_type": {
+          "types": ["NoneType"],
+          "example": "nothing = None"
+        }
+      }
+    },
+    "operators": {
+      "description": "Operators are special symbols used to perform operations on variables and values.",
+      "types": {
+        "arithmetic": {
+          "symbols": ["+", "-", "*", "/", "//", "%", "**"],
+          "example": "a = 5\nb = 2\nprint(a + b)  # 7\nprint(a ** b)  # 25"
+        },
+        "comparison": {
+          "symbols": ["==", "!=", ">", "<", ">=", "<="],
+          "example": "x = 10\ny = 20\nprint(x < y)  # True"
+        },
+        "logical": {
+          "symbols": ["and", "or", "not"],
+          "example": "is_sunny = True\nis_warm = False\nprint(is_sunny and is_warm)  # False"
+        },
+        "assignment": {
+          "symbols": ["=", "+=", "-=", "*=", "/="],
+          "example": "count = 10\ncount += 5  # 15"
+        },
+        "membership": {
+          "symbols": ["in", "not in"],
+          "example": "print('a' in 'apple')  # True"
+        },
+        "identity": {
+          "symbols": ["is", "is not"],
+          "example": "x = [1, 2]\ny = x\nprint(x is y)  # True"
+        },
+        "bitwise": {
+          "symbols": ["&", "|", "^", "~", "<<", ">>"],
+          "example": "a = 5  # 0b101\nb = 3  # 0b011\nprint(a & b)  # 1"
+        }
+      }
+    },
+    "comments": {
+      "description": "Comments are used to explain code. They are ignored by the interpreter.",
+      "examples": [
+        "# This is a single-line comment",
+        "'''\nThis is a multi-line comment.\nUseful for long explanations.\n'''"
+      ]
+    },
+    "conditional_statements": {
+      "description": "Used to execute code blocks based on conditions.",
+      "example": "x = 10\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n    print('x is equal to 5')\nelse:\n    print('x is less than 5')"
+    },
+    "loops": {
+      "description": "Loops repeat a block of code multiple times.",
+      "types": {
+        "for_loop": {
+          "description": "Used to iterate over a sequence (list, tuple, string, etc.).",
+          "example": "for i in range(3):\n    print(i)"
+        },
+        "while_loop": {
+          "description": "Repeats code as long as a condition is true.",
+          "example": "count = 0\nwhile count < 3:\n    print(count)\n    count += 1"
+        }
+      }
+    },
+    "functions": {
+      "description": "Functions are reusable blocks of code defined with def.",
+      "example": "def greet(name):\n    return f'Hello, {name}!'\n\nprint(greet('Alice'))"
+    },
+    "classes": {
+      "description": "Classes are blueprints for creating objects.",
+      "example": "class Person:\n    def __init__(self, name):\n        self.name = name\n\n    def greet(self):\n        return f'Hello, my name is {self.name}'\n\np = Person('Alice')\nprint(p.greet())"
+    },
+    "exceptions": {
+      "description": "Exceptions are errors detected during execution. Use try/except to handle them.",
+      "example": "try:\n    x = 1 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero')"
+    },
+    "imports": {
+      "description": "Modules provide pre-written functions and variables. Use import to include them.",
+      "example": "import math\nprint(math.sqrt(16))"
+    },
+    "file_handling": {
+      "description": "Python can read and write files using the open() function.",
+      "example": "with open('example.txt', 'w') as f:\n    f.write('Hello, File!')"
+    }
+  }
+}
